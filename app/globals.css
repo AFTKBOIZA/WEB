@@ -1,22 +1,100 @@
-body {
-  padding: 0;
-  margin: 0;
+header {
   display: flex;
-  justify-items: center; 
-  height: 60px;         
-  padding: 0 7vw;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(248, 232, 217);
+  padding: 0 7vw;
+  height: 60px;
   border-bottom: 2px solid rgb(252, 196, 124);
   box-shadow: 0 2px 20px rgb(253, 124, 124);
 }
-.nav-left {
-  display: flex;
-  gap: 2rem;
-  font-weight: bold;
-}
 
-.nav-right {
+.search-container {
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
+}
+
+.search-container input {
+  padding: 0.3rem 1.5rem 0.3rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.clear-button {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+}
+ body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(248, 232, 217);
+}
+.nav-left a {
+  color: black;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: bold;
+}
+
+.nav-left a:hover {
+  background-color: rgb(252, 196, 124);
+  color: white;
+}
+.red_btn {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 160px;
+  font-weight: bold;
+  color: white;
+  line-height: 50px;
+  background-color: rgb(255, 99, 71);
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 7vw;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.main-text {
+  flex: 1;
+  min-width: 280px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.kumkom {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.image {
+  flex: 1;
+  min-width: 400px;
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+  max-width: 800px;
 }
