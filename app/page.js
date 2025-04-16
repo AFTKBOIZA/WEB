@@ -10,7 +10,7 @@ const HomePage = () => {
             อร่อยแบบลึกซึ้ง ปอเต๊กตึ้งยืนรอ สูตรไม่ซ้ำ จำไม่ได้ว่าใส่อะไรบ้าง
             ทอดกรอบรสดี แถมฟรีไขมันพอกตับ สูตรอ่ะจำได้ แต่ไม่ใช้ มีผงชูรส 100%
           </p>
-          <Link href="/Menu">
+          <Link href="/About">
             <button className="red_btn">
               Visit Now <i className="fa-solid fa-arrow-right-long"></i>
             </button>
@@ -62,32 +62,25 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* ✅ Contact Us Section */}
       <div className="contact-section">
         <h2 className="contact-title">Contact Us</h2>
         <div className="contact-columns">
           <div className="contact-box">
             <h3>Address</h3>
-            <p>20/1 Tambon Na Mueng</p>
-            <p>Koh Samui, Surat Thani 84140</p>
+            <p>43 Rangsit-Nakhon Nayok 44 , Prachathipat</p>
+            <p>Thanyaburi , Pathum Thani 12130</p>
           </div>
 
           <div className="contact-box">
             <h3>Contact</h3>
-            <p>098-822-9566</p>
-            <p>tarabistrosamui.com</p>
-            <div className="social-icons">
-              <i className="fa-brands fa-facebook"></i>
-              <i className="fa-brands fa-instagram"></i>
-              <i className="fa-brands fa-tiktok"></i>
-            </div>
+            <p>093-117-xxxx</p>
           </div>
 
           <div className="contact-box">
             <h3>Opening Hours</h3>
-            <p>Mon - Fri<br />10:00 am – 09:00 pm<br />(Last Order 8.30 PM)</p>
-            <p>Saturday<br />10:00 am – 09:00 pm<br />(Last Order 8.30 PM)</p>
-            <p>Sunday<br />10:00 am – 09:00 pm<br />(Last Order 8.30 PM)</p>
+            <p>Mon - Fri<br />10:00 am – 09:00 pm</p>
+            <p>Saturday<br />10:00 am – 09:00 pm</p>
+            <p>Sunday<br />10:00 am – 09:00 pm</p>
           </div>
         </div>
       </div>

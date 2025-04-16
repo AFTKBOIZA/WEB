@@ -174,7 +174,6 @@ header {
 }
 
 
-
 .contact-title {
   font-size: 2.5rem;
   margin-bottom: 40px;
@@ -201,25 +200,4 @@ header {
   margin-bottom: 10px;
   font-weight: 500;
   font-family: 'Georgia', serif;
-}
-
-.contact-box p {
-  margin: 6px 0;
-  color: #333;
-}
-
-.social-icons {
-  margin-top: 10px;
-  font-size: 1.2rem;
-}
-
-.social-icons i {
-  margin: 0 10px;
-  cursor: pointer;
-  color: #222;
-  transition: color 0.3s;
-}
-
-.social-icons i:hover {
-  color: rgb(253, 77, 8); /* สีส้มตอน hover */
 }
