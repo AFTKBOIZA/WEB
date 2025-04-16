@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-
 const HomePage = () => {
   return (
     <>
@@ -28,41 +27,72 @@ const HomePage = () => {
       </div>
 
       <div className="recommend-menu">
-  <div className="re-menu">
-    <img
-      src="https://blog.hungryhub.com/wp-content/uploads/2022/07/fried-noodle-with-pork-soy-sauce-vegetable-1-1024x683.webp"
-      alt="เมนูแนะนำ"
-    />
-    <h3>Food name</h3>
-    <p>แม่งโคตรอร่อย</p>
-    <Link href="/Menu">
-      <button className="red_btn">See Menu</button>
-    </Link>
-  </div>
-  <div className="re-menu">
-    <img
-      src="https://blog.hungryhub.com/wp-content/uploads/2022/07/%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B8%97%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B8%A2%E0%B8%A1-1024x683.webp"
-      alt="เมนูแนะนำ"
-    />
-    <h3>Food name</h3>
-    <p>แม่งโคตรอร่อย</p>
-    <Link href="/Menu">
-      <button className="red_btn">See Menu</button>
-    </Link>
-  </div>
-  <div className="re-menu">
-    <img
-      src="https://static.thairath.co.th/media/Dtbezn3nNUxytg04ajW9XQOOLOr3FWkG3zrWdQ81AKnKm5.webp"
-      alt="เมนูแนะนำ"
-    />
-    <h3>Food name</h3>
-    <p>แม่งโคตรอร่อย</p>
-    <Link href="/Menu">
-      <button className="red_btn">See Menu</button>
-    </Link>
-  </div>
-</div>
+        <div className="re-menu">
+          <img
+            src="https://blog.hungryhub.com/wp-content/uploads/2022/07/fried-noodle-with-pork-soy-sauce-vegetable-1-1024x683.webp"
+            alt="เมนูแนะนำ"
+          />
+          <h3>Food name</h3>
+          <p>แม่งโคตรอร่อย</p>
+          <Link href="/Menu">
+            <button className="red_btn">See Menu</button>
+          </Link>
+        </div>
+        <div className="re-menu">
+          <img
+            src="https://blog.hungryhub.com/wp-content/uploads/2022/07/%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B8%97%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B8%A2%E0%B8%A1-1024x683.webp"
+            alt="เมนูแนะนำ"
+          />
+          <h3>Food name</h3>
+          <p>แม่งโคตรอร่อย</p>
+          <Link href="/Menu">
+            <button className="red_btn">See Menu</button>
+          </Link>
+        </div>
+        <div className="re-menu">
+          <img
+            src="https://static.thairath.co.th/media/Dtbezn3nNUxytg04ajW9XQOOLOr3FWkG3zrWdQ81AKnKm5.webp"
+            alt="เมนูแนะนำ"
+          />
+          <h3>Food name</h3>
+          <p>แม่งโคตรอร่อย</p>
+          <Link href="/Menu">
+            <button className="red_btn">See Menu</button>
+          </Link>
+        </div>
+      </div>
+
+      {/* ✅ Contact Us Section */}
+      <div className="contact-section">
+        <h2 className="contact-title">Contact Us</h2>
+        <div className="contact-columns">
+          <div className="contact-box">
+            <h3>Address</h3>
+            <p>20/1 Tambon Na Mueng</p>
+            <p>Koh Samui, Surat Thani 84140</p>
+          </div>
+
+          <div className="contact-box">
+            <h3>Contact</h3>
+            <p>098-822-9566</p>
+            <p>tarabistrosamui.com</p>
+            <div className="social-icons">
+              <i className="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-tiktok"></i>
+            </div>
+          </div>
+
+          <div className="contact-box">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri<br />10:00 am – 09:00 pm<br />(Last Order 8.30 PM)</p>
+            <p>Saturday<br />10:00 am – 09:00 pm<br />(Last Order 8.30 PM)</p>
+            <p>Sunday<br />10:00 am – 09:00 pm<br />(Last Order 8.30 PM)</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
+
 export default HomePage;
