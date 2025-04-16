@@ -54,15 +54,21 @@ header {
   margin-top: 20px;
   width: 160px;
   font-weight: bold;
-  color: white;
+  color: aliceblue;
   line-height: 50px;
-  background-color: rgb(255, 99, 71);
-  border: none;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 16px;
-  transition: background-color 0.3s;
+  background-color: rgb(253, 77, 8);
+  border-radius: 5px;
+  border: 1px solid rgb(253, 77, 8);
+  box-shadow: 0 10px 15px rgb(250, 120, 69);
+  transition: all 0.2s ease;
 }
+
+.red_btn:hover {
+  background-color: white;
+  color: rgb(255,77,8); 
+  border: 0 12px 15px rgb(253,77,8);
+}
+
 
 .main {
   display: flex;
@@ -71,6 +77,7 @@ header {
   padding: 4rem 7vw;
   gap: 3rem;
   flex-wrap: wrap;
+  flex-direction: row; /* บนหน้าจอใหญ่ */
 }
 
 .main-text {
@@ -90,11 +97,65 @@ header {
 
 .image {
   flex: 1;
-  min-width: 400px;
+  min-width: 280px;
   text-align: center;
 }
 
 .img {
   width: 100%;
   max-width: 800px;
+}
+
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-text {
+    order: 2;
+  }
+
+  .image {
+    order: 1;
+  }
+}
+.recommend-menu {
+  margin: 70px auto;
+  padding:60px; 
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; 
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+
+.re-menu {
+  flex: 1;
+  width: 250px;
+  text-align: center;
+}
+
+.re-menu img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.re-menu h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.re-menu p {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 1.5rem;
 }
