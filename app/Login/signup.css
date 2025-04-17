@@ -1,0 +1,78 @@
+.signup-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .signup-title {
+    font-size: 2.5rem;
+    font-family: Georgia, serif;
+    margin-bottom: 10px;
+  }
+  
+  .signup-subtext {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .signup-box {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .btn img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .google {
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+
+  .email {
+    border: 1px solid #aaa;
+    background-color: white;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+  }
+  
+  .divider span {
+    padding: 0 10px;
+    color: #999;
+  }
+  
+  .checkbox {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  

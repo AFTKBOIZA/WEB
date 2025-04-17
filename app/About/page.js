@@ -12,18 +12,18 @@ const AboutPage = () => {
       </div>
 
       <div className="about-gallery">
-        <img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa3yX714zDAL4seyhRriCkh6JlrBZKtC29lBZEqFNl7YEhKWSetqS.jpg" alt="pond" />
-        <img src="https://static.naewna.com/uploads/files2017/images/k1tchyq_1714037294_3353910373605990487_56939444746.gif" alt="lake" />
-        <img src="https://s359.kapook.com/pagebuilder/b1c77da8-83a9-4cc4-ac0f-a3fe4e67f394.jpg" alt="farm" />
-        <img src="https://s359.kapook.com/pagebuilder/b1c77da8-83a9-4cc4-ac0f-a3fe4e67f394.jpg" alt="farm" />
-        <img src="https://s359.kapook.com/pagebuilder/b1c77da8-83a9-4cc4-ac0f-a3fe4e67f394.jpg" alt="farm" />
-        <img src="https://yomorio.com/cdn/shop/files/sexy-kimono-robes-japanese-style-cosplay-lingerie-with-apron-pink-chiffon-yukata_7.jpg?v=1727401823" alt="lake" />
-        <img src="https://i.ebayimg.com/images/g/5OkAAOSwTnpmC4Xb/s-l1200.jpg" alt="lake" />
-        <img src="https://static.naewna.com/uploads/files2017/images/k1tchyq_1714037294_3353910373605990487_56939444746.gif" alt="lake" />
-        <img src="https://static.naewna.com/uploads/files2017/images/k1tchyq_1714037294_3353910373605990487_56939444746.gif" alt="lake" />
-        <img src="https://i.ebayimg.com/images/g/5OkAAOSwTnpmC4Xb/s-l1200.jpg" alt="lake" />
-        <img src="https://i.ebayimg.com/images/g/5OkAAOSwTnpmC4Xb/s-l1200.jpg" alt="lake" />
-        <img src="https://cdn.discordapp.com/attachments/642688524130451457/1358830663305924770/image.png?ex=6801cb6b&is=680079eb&hm=2b31509f24f707eed9d2f4564f6b133909cbbda97e3a707dbea9a4315ffe693b&" alt="lake" />
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/86/ec/a5/spectrum-lounge-bar-at.jpg" alt="view" />
+        <img src="https://static.trueplookpanya.com/tppy/member/m_545000_547500/546742/cms/images/2020/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%A7%E0%B8%AA%E0%B8%A7%E0%B8%A2%20%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%20%E0%B8%AA%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%9A%E0%B8%B2%E0%B8%A3%E0%B9%8C-1.jpg" alt="view" />
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/4c/ba/a5/outdoor.jpg" alt="view" />
+        <img src="https://promotions.co.th/wp-content/uploads/2022/08/Cielo-Sky-Bar-Restaurant.jpg" alt="view" />
+        <img src="https://www.powerstainlesssteel.com/wp-content/uploads/2021/10/56-1024x683.jpg" alt="kitchen" />
+        <img src="https://www.powerstainlesssteel.com/wp-content/uploads/2021/09/11-1024x683.jpg" alt="kitchen" />
+        <img src="https://www.dailynews.co.th/wp-content/uploads/2024/11/427-1-1280x854.jpg" alt="poke" />
+        <img src="https://www.technologychaoban.com/wp-content/uploads/2018/08/Kam-5.jpg" alt="shrimp" />
+        <img src="https://f.ptcdn.info/151/066/000/pygzknf5838Et6QstsD-o.jpg" alt="ka-pao" />
+        <img src="https://www.nestleprofessional.co.th/sites/default/files/2023-03/BANNER_%E0%B8%99%E0%B8%A1%E0%B8%A1%E0%B8%B0%E0%B8%9E%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%A7%20%E0%B8%8A%E0%B8%B2%E0%B9%84%E0%B8%97%E0%B8%A2%20540x400%20px.jpg" alt="drink" />
+        <img src="https://www.nestleprofessional.co.th/sites/default/files/2023-03/BANNER_%E0%B9%80%E0%B8%AD%E0%B8%AA%E0%B9%80%E0%B8%9E%E0%B8%A3%E0%B8%AA%E0%B9%82%E0%B8%8B%E0%B9%88%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99%20540x400%20px.jpg" alt="drink" />
+        <img src="https://www.nestleprofessional.co.th/sites/default/files/2023-03/BANNER_%E0%B8%99%E0%B8%A1%E0%B8%8A%E0%B8%A1%E0%B8%9E%E0%B8%B9%20540x400%20px.jpg" alt="drink" />
 
 
       </div>
