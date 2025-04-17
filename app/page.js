@@ -29,33 +29,33 @@ const HomePage = () => {
       <div className="recommend-menu">
         <div className="re-menu">
           <img
-            src="https://blog.hungryhub.com/wp-content/uploads/2022/07/fried-noodle-with-pork-soy-sauce-vegetable-1-1024x683.webp"
+            src="https://fit-d.com/uploads/food/afb2ccb7050c6a64d52b7e3736d3a6f8.jpg"
             alt="เมนูแนะนำ"
           />
-          <h3>Food name</h3>
-          <p>แม่งโคตรอร่อย</p>
+          <h3>ข้าวผัดกะเพราไก่ไข่ดาว</h3>
+          <p>ข้าวสวยร้อน ๆ ราดด้วยผัดกะเพราไก่หอมเครื่องเทศ เสิร์ฟพร้อมไข่ดาวกรอบนอกนุ่มใน</p>
           <Link href="/Menu">
             <button className="red_btn">See Menu</button>
           </Link>
         </div>
         <div className="re-menu">
           <img
-            src="https://blog.hungryhub.com/wp-content/uploads/2022/07/%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B8%97%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B8%A2%E0%B8%A1-1024x683.webp"
+            src="https://static.thairath.co.th/media/4DQpjUtzLUwmJZZSEmAUm74bI2EL8Sb34rOSLQkKjXQF.jpg"
             alt="เมนูแนะนำ"
           />
-          <h3>Food name</h3>
-          <p>แม่งโคตรอร่อย</p>
+          <h3>ข้าวมันไก่</h3>
+          <p>ข้าวมันหอมกลิ่นขิงกระเทียม เสิร์ฟพร้อมไก่ต้มเนื้อนุ่ม น้ำจิ้มเต้าเจี้ยวรสเด็ด และซุปใสร้อน ๆ</p>
           <Link href="/Menu">
             <button className="red_btn">See Menu</button>
           </Link>
         </div>
         <div className="re-menu">
           <img
-            src="https://static.thairath.co.th/media/Dtbezn3nNUxytg04ajW9XQOOLOr3FWkG3zrWdQ81AKnKm5.webp"
+            src="https://i.ytimg.com/vi/BPjymoPH0e0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAqzmNDy11o3jbihPAIFXfAv2p2eQ"
             alt="เมนูแนะนำ"
           />
-          <h3>Food name</h3>
-          <p>แม่งโคตรอร่อย</p>
+          <h3>ปีกไก่ทอดกระเทียม</h3>
+          <p>ปีกไก่หมักเครื่องทอดจนกรอบ คลุกกระเทียมเจียวหอม ๆ ทานเป็นกับข้าวหรือของว่างก็อร่อย</p>
           <Link href="/Menu">
             <button className="red_btn">See Menu</button>
           </Link>
