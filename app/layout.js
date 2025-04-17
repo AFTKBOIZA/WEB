@@ -41,8 +41,8 @@ export default function RootLayout({ children }) {
           <nav className="nav-left">
             <Link href="/">Home</Link>
             <Link href="/About">About</Link>
-            <Link href="/Menu">Food Menu</Link>
-            <Link href="/Booking">Book Table</Link>
+            <Link href="/menu">Food Menu</Link>
+            <Link href="/booking">Book Table</Link>
           </nav>
 
           <div className="nav-right">
