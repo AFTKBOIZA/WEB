@@ -10,7 +10,7 @@ const HomePage = () => {
             อร่อยแบบลึกซึ้ง ปอเต๊กตึ้งยืนรอ สูตรไม่ซ้ำ จำไม่ได้ว่าใส่อะไรบ้าง
             ทอดกรอบรสดี แถมฟรีไขมันพอกตับ สูตรอ่ะจำได้ แต่ไม่ใช้ มีผงชูรส 100%
           </p>
-          <Link href="/About">
+          <Link href="/about">
             <button className="red_btn">
               Visit Now <i className="fa-solid fa-arrow-right-long"></i>
             </button>
