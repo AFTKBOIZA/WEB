@@ -34,7 +34,7 @@ const HomePage = () => {
           />
           <h3>ข้าวผัดกะเพราไก่ไข่ดาว</h3>
           <p>ข้าวสวยร้อน ๆ ราดด้วยผัดกะเพราไก่หอมเครื่องเทศ เสิร์ฟพร้อมไข่ดาวกรอบนอกนุ่มใน</p>
-          <Link href="/menu">
+          <Link href="/menu1">
             <button className="red_btn">See Menu</button>
           </Link>
         </div>
@@ -45,7 +45,7 @@ const HomePage = () => {
           />
           <h3>ข้าวมันไก่</h3>
           <p>ข้าวมันหอมกลิ่นขิงกระเทียม เสิร์ฟพร้อมไก่ต้มเนื้อนุ่ม น้ำจิ้มเต้าเจี้ยวรสเด็ด และซุปใสร้อน ๆ</p>
-          <Link href="/menu">
+          <Link href="/menu1">
             <button className="red_btn">See Menu</button>
           </Link>
         </div>
@@ -56,7 +56,7 @@ const HomePage = () => {
           />
           <h3>ปีกไก่ทอดกระเทียม</h3>
           <p>ปีกไก่หมักเครื่องทอดจนกรอบ คลุกกระเทียมเจียวหอม ๆ ทานเป็นกับข้าวหรือของว่างก็อร่อย</p>
-          <Link href="/menu">
+          <Link href="/menu1">
             <button className="red_btn">See Menu</button>
           </Link>
         </div>
