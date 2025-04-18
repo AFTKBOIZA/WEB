@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import './Book.css';
+import './book.css';
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
