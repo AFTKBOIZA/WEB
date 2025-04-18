@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         <header>
           <nav className="nav-left">
             <Link href="/">Home</Link>
-            <Link href="/about1">About</Link>
+            <Link href="/about2">About</Link>
             <Link href="/menu">Food Menu</Link>
             <Link href="/booking">Book Table</Link>
           </nav>
