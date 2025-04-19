@@ -13,9 +13,11 @@ const BookingPage = () => {
   const [email, setEmail] = useState('');
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
+  const [guests, setGuests] = useState(1);
+  const [specialRequest, setSpecialRequest] = useState('');
   const [message, setMessage] = useState('');
 
-  const today = new Date().toISOString().split('T')[0]; // 🔸 ใช้เป็น min ของ input
+  const today = new Date().toISOString().split('T')[0];
 
   useEffect(() => {
     const getUser = async () => {
@@ -48,6 +50,8 @@ const BookingPage = () => {
         email,
         booking_date: date,
         booking_time: time,
+        guests,
+        specialRequest, // ใช้ชื่อตรงกับใน Supabase
       },
     ]);
 
@@ -58,6 +62,8 @@ const BookingPage = () => {
       setMessage('✅ Booking successful!');
       setDate('');
       setTime('');
+      setGuests(1);
+      setSpecialRequest('');
     }
   };
 
@@ -88,7 +94,7 @@ const BookingPage = () => {
           <input
             type="date"
             required
-            min={today} // ✅ ป้องกันเลือกวันก่อนหน้า
+            min={today}
             value={date}
             onChange={(e) => setDate(e.target.value)}
           />
@@ -99,6 +105,22 @@ const BookingPage = () => {
             required
             value={time}
             onChange={(e) => setTime(e.target.value)}
+          />
+
+          <label>guest</label>
+          <input
+            type="number"
+            min="1"
+            max="20"
+            required
+            value={guests}
+            onChange={(e) => setGuests(parseInt(e.target.value))}
+          />
+
+          <label>specialRequest</label>
+          <textarea
+            value={specialRequest}
+            onChange={(e) => setSpecialRequest(e.target.value)}
           />
 
           <button type="submit">Book Now</button>
