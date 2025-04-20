@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const HomePage = () => {
   return (
-    <>
+    <div>
       <div className="main">
         <div className="main-text">
           <h1>อาหารสุดอร่อยแสนเท่และจ๊าบสำหรับชีวิตดีๆ ที่ลงตัวของคุณ</h1>
@@ -84,7 +84,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

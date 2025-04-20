@@ -11,10 +11,9 @@ export default function EmailSignupPage() {
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => { 
     e.preventDefault();
 
-    // ✅ Signup ด้วย Supabase Auth (email + password)
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
@@ -27,7 +26,6 @@ export default function EmailSignupPage() {
       setEmail('');
       setPassword('');
 
-      // ✅ ไปหน้า Home หรือหน้าอื่นหลังสมัคร
       router.push('/');
     }
   };

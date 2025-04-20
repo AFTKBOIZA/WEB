@@ -1,6 +1,5 @@
 'use client';
 import './globals.css';
-
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { FaUser } from 'react-icons/fa';
@@ -11,25 +10,25 @@ const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 );
 
-export default function RootLayout({ children }) {
-  const [user, setUser] = useState(null);
+export default function ({ children }) { 
+  const [user, setUser] = useState(null); 
 
-  useEffect(() => {
+  useEffect(() => { //ใช้ useEffect เพื่อดึงข้อมูล session ของผู้ใช้จาก Supabase
     const getSession = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      setUser(session?.user ?? null);
+      const { data: { session } } = await supabase.auth.getSession(); 
+      setUser(session?.user ?? null); 
     };
 
     getSession();
-
-    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null);
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => { 
+      setUser(session?.user ?? null); //อัปเดตสถานะเมื่อมีการเปลี่ยนแปลง
     });
 
-    return () => listener.subscription.unsubscribe();
+    return () => listener.subscription.unsubscribe(); 
   }, []);
 
-  const handleLogout = async () => {
+  
+  const handleLogout = async () => { 
     await supabase.auth.signOut();
     setUser(null);
   };

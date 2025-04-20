@@ -1,7 +1,6 @@
-// BookingHistoryPage.js
 'use client';
 import { useState } from 'react';
-import './his.css'; // ✅ เพิ่มบรรทัดนี้
+import './his.css'; 
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
@@ -9,7 +8,7 @@ const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 );
 
-export default function BookingHistoryPage() {
+export default function BookingHistoryPage() { 
   const [bookings, setBookings] = useState([]);
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -22,28 +21,28 @@ export default function BookingHistoryPage() {
     setSubmitted(true);
     setNotFound(false);
 
-    const { data, error } = await supabase
+    const { data, error } = await supabase //ดึงข้อมูลการจองจากฐานข้อมูล
       .from('booking')
       .select('*')
       .eq('email', email.trim())
       .order('booking_date', { ascending: false });
 
-    if (!error) {
+    if (!error) { 
       setBookings(data);
-      if (data.length === 0) setNotFound(true);
+      if (data.length === 0) setNotFound(true); //ถ้าไม่พบการจองให้แสดงข้อความ
     }
 
     setLoading(false);
   };
 
-  const cancelBooking = async (id) => {
-    const { error } = await supabase.from('booking').delete().eq('id', id);
+  const cancelBooking = async (id) => {   //ยกเลิกการจอง
+    const { error } = await supabase.from('booking').delete().eq('id', id); 
     if (!error) {
-      setBookings(bookings.filter((b) => b.id !== id));
+      setBookings(bookings.filter((b) => b.id !== id)); 
     }
   };
 
-  return (
+  return ( 
     <div className="booking-history-container">
       <h2>📬 ตรวจสอบประวัติการจอง</h2>
 

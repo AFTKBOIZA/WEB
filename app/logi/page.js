@@ -1,11 +1,10 @@
-// app/Signup/page.js
 'use client';
 import React from 'react';
-import './signup.css'; // ไฟล์ CSS สำหรับตกแต่ง
+import './signup.css'; 
 import { supabase } from '@/lib/supabaseClient';
 import Link from 'next/link';
 
-const handleGoogleSignup = async () => {
+const GoogleSignIn = async () => {
   const { error } = await supabase.auth.signInWithOAuth({
     provider: 'google',
   });
@@ -15,17 +14,17 @@ const handleGoogleSignup = async () => {
   }
 };
 
-export default function SignupPage() {
+export default function SignInPage() {
   const clientId = '249244386691-culs91tgfroh5kjqf1defk9tpvfnnape.apps.googleusercontent.com';
   return (
     <div className="signup-container">
-      <h1 className="signup-title">Login Up</h1>
+      <h1 className="signup-title">Login</h1>
       <p className="signup-subtext">
         not have a account? <a href="/sign">Sign Up</a>
       </p>
 
       <div className="signup-box">
-      <button className="btn google" onClick={handleGoogleSignup}>
+      <button className="btn google" onClick={GoogleSignIn}>
   <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google" />
   Login with Google
 </button>

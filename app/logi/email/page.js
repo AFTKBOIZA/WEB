@@ -14,8 +14,7 @@ export default function EmailLoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // ✅ ใช้ Supabase Auth login ด้วย email/password
-    const { error } = await supabase.auth.signInWithPassword({
+    const { error } = await supabase.auth.signInWithPassword({ //ใช้ signInWithPassword โดยรับ email และ password
       email,
       password,
     });
@@ -24,7 +23,7 @@ export default function EmailLoginPage() {
       setMessage('❌ ' + error.message);
     } else {
       setMessage('✅ Login successful!');
-      router.push('/'); // ส่งไปหน้า Home หรือที่ต้องการ
+      router.push('/'); 
     }
   };
 
