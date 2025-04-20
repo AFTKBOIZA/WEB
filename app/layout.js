@@ -10,7 +10,7 @@ const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 );
 
-export default function ({ children }) { 
+export default function Layout({ children }) { 
   const [user, setUser] = useState(null); 
 
   useEffect(() => { //ใช้ useEffect เพื่อดึงข้อมูล session ของผู้ใช้จาก Supabase
@@ -69,5 +69,6 @@ export default function ({ children }) {
         <main style={{ padding: '2rem' }}>{children}</main>
       </body>
     </html>
+    
   );
 }
