@@ -12,7 +12,7 @@ const HomePage = () => {
           </p>
           <Link href="/about2">
             <button className="red_btn">
-              Visit Now <i className="fa-solid fa-arrow-right-long"></i>
+              Visit Now <i className="visit_btn"></i>
             </button>
           </Link>
         </div>

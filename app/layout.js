@@ -7,8 +7,8 @@ import { FaUser } from 'react-icons/fa';
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
-  'https://sniepxybkdbdqifcepff.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNuaWVweHlia2RiZHFpZmNlcGZmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ4OTUxNjAsImV4cCI6MjA2MDQ3MTE2MH0.rS_FCbID9prXVQ7mnUIdCodplDBIjViYpc0_TeUFOXc'
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 );
 
 export default function RootLayout({ children }) {
