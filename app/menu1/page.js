@@ -108,11 +108,11 @@ const MenuPage = () => {
         <div className="food-grid">
           {foodItems.map((item, index) => (
             <div className="food-card" key={index}>
-              <img src={item.image} alt={item.name} />
+              <img src={item.image}/>
               <div className="food-content">
                 <h3>{item.name}</h3>
                 <p>{item.description}</p>
-                <span className="price">${item.price.toFixed(2)}</span>
+                <span className="price">{item.price.toFixed(2)}฿</span>
               </div>
             </div>
           ))}

@@ -78,9 +78,9 @@ const HomePage = () => {
 
           <div className="contact-box">
             <h3>Opening Hours</h3>
-            <p>Mon - Fri<br />10:00 am – 09:00 pm</p>
-            <p>Saturday<br />10:00 am – 09:00 pm</p>
-            <p>Sunday<br />10:00 am – 09:00 pm</p>
+            <p>Mon - Fri<br />10:00 am - 09:00 pm</p>
+            <p>Saturday<br />10:00 am - 09:00 pm</p>
+            <p>Sunday<br />10:00 am - 09:00 pm</p>
           </div>
         </div>
       </div>

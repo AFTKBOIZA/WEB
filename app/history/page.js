@@ -21,7 +21,7 @@ export default function BookingHistoryPage() {
     setSubmitted(true);
     setNotFound(false);
 
-    const { data, error } = await supabase //ดึงข้อมูลการจองจากฐานข้อมูล
+    const { data, error } = await supabase 
       .from('booking')
       .select('*')
       .eq('email', email.trim())
@@ -29,13 +29,13 @@ export default function BookingHistoryPage() {
 
     if (!error) { 
       setBookings(data);
-      if (data.length === 0) setNotFound(true); //ถ้าไม่พบการจองให้แสดงข้อความ
+      if (data.length === 0) setNotFound(true); 
     }
 
     setLoading(false);
   };
 
-  const cancelBooking = async (id) => {   //ยกเลิกการจอง
+  const cancelBooking = async (id) => {  
     const { error } = await supabase.from('booking').delete().eq('id', id); 
     if (!error) {
       setBookings(bookings.filter((b) => b.id !== id)); 

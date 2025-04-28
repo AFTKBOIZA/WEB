@@ -6,15 +6,15 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 export default function EmailLoginPage() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [message, setMessage] = useState('');
-  const router = useRouter();
+   const router = useRouter();
+   const [email, setEmail] = useState('');
+   const [password, setPassword] = useState('');
+   const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const { error } = await supabase.auth.signInWithPassword({ //ใช้ signInWithPassword โดยรับ email และ password
+    const { error } = await supabase.auth.signInWithPassword({ 
       email,
       password,
     });
@@ -62,10 +62,12 @@ export default function EmailLoginPage() {
       </div>
 
       <div className="social-buttons">
-        <button className="google-btn" onClick={async () => {
+        <button className="google-btn" 
+        onClick={async () => {
           const { error } = await supabase.auth.signInWithOAuth({ provider: 'google' });
-          if (error) console.error('Google Login Error:', error.message);
+          if (error)console.error('Google Login Error:', error.message);
         }}>
+
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWIl8zC8WAMHi5JVmKUb3YVvZd5gvoCdy-NQ&s"
             alt="Google"

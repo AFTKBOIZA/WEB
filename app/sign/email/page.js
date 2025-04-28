@@ -14,7 +14,7 @@ export default function EmailSignupPage() {
   const handleSubmit = async (e) => { 
     e.preventDefault();
 
-    const { data, error } = await supabase.auth.signUp({
+    const { error } = await supabase.auth.signUp({
       email,
       password,
     });
@@ -23,9 +23,6 @@ export default function EmailSignupPage() {
       setMessage('❌ ' + error.message);
     } else {
       setMessage('✅ Registered successfully!');
-      setEmail('');
-      setPassword('');
-
       router.push('/');
     }
   };
@@ -57,7 +54,7 @@ export default function EmailSignupPage() {
         />
 
         <button type="submit" className="signup-btn">Sign Up</button>
-        {message && <p>{message}</p>}
+        <p>{message}</p>
       </form>
 
       <div className="divider">
@@ -68,10 +65,8 @@ export default function EmailSignupPage() {
         <button
           className="google-btn"
           onClick={async () => {
-            const { error } = await supabase.auth.signInWithOAuth({
-              provider: 'google',
-            });
-            if (error) console.error('Google Login Error:', error.message);
+            const { error } = await supabase.auth.signInWithOAuth({ provider: 'google'});
+            console.error('Google Login Error:', error.message);
           }}
         >
           <img

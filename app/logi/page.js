@@ -5,9 +5,7 @@ import { supabase } from '@/lib/supabaseClient';
 import Link from 'next/link';
 
 const GoogleSignIn = async () => {
-  const { error } = await supabase.auth.signInWithOAuth({
-    provider: 'google',
-  });
+  const { error } = await supabase.auth.signInWithOAuth({provider: 'google'});
 
   if (error) {
     console.error('Google Sign In Error:', error.message);

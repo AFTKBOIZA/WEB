@@ -13,15 +13,16 @@ const supabase = createClient(
 export default function Layout({ children }) { 
   const [user, setUser] = useState(null); 
 
-  useEffect(() => { //ใช้ useEffect เพื่อดึงข้อมูล session ของผู้ใช้จาก Supabase
+  useEffect(() => { 
     const getSession = async () => {
       const { data: { session } } = await supabase.auth.getSession(); 
       setUser(session?.user ?? null); 
     };
 
     getSession();
+    
     const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => { 
-      setUser(session?.user ?? null); //อัปเดตสถานะเมื่อมีการเปลี่ยนแปลง
+      setUser(session?.user ?? null); 
     });
 
     return () => listener.subscription.unsubscribe(); 
@@ -47,16 +48,14 @@ export default function Layout({ children }) {
 
           <div className="nav-right">
             {user ? (
-              <>
-                {user.user_metadata?.avatar_url ? (
-                  <img src={user.user_metadata.avatar_url} alt="avatar" />
-                ) : (
-                  <FaUser />
-                )}
+              <div>
+                 {user.user_metadata?.avatar_url ? (
+                  <img src={user.user_metadata.avatar_url} />
+                ) : ( <FaUser />)}
                 <button className="logout-button" onClick={handleLogout}>
                   Logout
                 </button>
-              </>
+              </div>
             ) : (
               <Link href="/sign" className="login-link">
                 <FaUser />
@@ -66,7 +65,7 @@ export default function Layout({ children }) {
           </div>
         </header>
 
-        <main style={{ padding: '2rem' }}>{children}</main>
+        <main >{children}</main>
       </body>
     </html>
     

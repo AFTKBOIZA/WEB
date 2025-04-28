@@ -21,7 +21,7 @@ const BookingPage = () => {
 
   useEffect(() => {
     const getUser = async () => {
-      const { data: { session } } = await supabase.auth.getSession(); //ถ้ามี user login จะดึงข้อมูล user มา
+      const { data: { session } } = await supabase.auth.getSession(); 
       const user = session?.user; 
       if (user) {
         setName(user.user_metadata.full_name || user.user_metadata.name || ''); 
@@ -38,12 +38,12 @@ const BookingPage = () => {
     const selectedDate = new Date(date);
     const currentDate = new Date(today);
 
-    if (selectedDate < currentDate) {   //วันที่จองต้องไม่ใช้วันที่ผ่านมาแล้ว
+    if (selectedDate < currentDate) {  
       setMessage('❌ Cannot book a past date.');
       return;
     }
 
-    const { error } = await supabase.from('booking').insert([ //ทำการจองแล้วบันทึกลง db
+    const { error } = await supabase.from('booking').insert([ 
       {
         name,
         email,
